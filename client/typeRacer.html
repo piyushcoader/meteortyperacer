@@ -1,0 +1,21 @@
+<head>
+    <title>typeRacer</title>
+</head>
+
+<body>
+<h1>Welcome to Meteor!</h1>
+{{> typeRacerGame}}
+</body>
+
+<template name="typeRacerGame">
+    <p>
+
+    <h3>
+        {{#each typeRacerText}}
+            <span style="color:{{getColor}}">{{textValue}}</span>
+        {{/each}}
+    </h3>
+
+    </p>
+    <textarea style=" color:{{isValidInput}}" class="typeRacerTextInput"></textarea>
+</template>
